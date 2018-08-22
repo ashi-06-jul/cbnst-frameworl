@@ -1,16 +1,20 @@
-var myForm= document.forms.form;
+function equation() {
+    var a = document.getElementById('firstNumber').value;
+    var b = document.getElementById('secondNumber').value;
+    var c = document.getElementById('thirdNumber').value;
+   
+    var myForm= document.forms.form1;
 
 
 myForm.onsubmit=function(){
-      if(myForm.a.value=="" || myForm.b.value=="" || myForm.c.value=="") {
+      if(myForm.txtinterval1.value=="" || myForm.txtinterval2.value=="") {
       	
       alert("enter the value");
 
       }
       else{
-      	var a=parseInt(myForm.elements.a.value);
-          var b=parseInt(myForm.elements.b.value);
-          var b=parseInt(myForm.elements.c.value);
+      	var a=parseInt(myForm.elements.txtinterval1.value);
+      	var b=parseInt(myForm.elements.txtinterval2.value);
       	var f=function(x){
 		return ((x*x*x)-(5*x)+1);
 		}
@@ -43,3 +47,4 @@ myForm.onsubmit=function(){
 		}
   
 };
+    

@@ -1,0 +1,61 @@
+<html><head>
+<script src="eq.js">
+    	#{
+	border-radius:5px;
+	}
+	.features-table{
+	border-radius:20px;
+	border-spacing: 0;
+	text-shadow: 0 1px 0 #fff;
+	color: #2a2a2a;
+	background: #fafafa;
+	background-image: -moz-linear-gradient(top, #fff, #eaeaea, #fff); /* Firefox 3.6 */
+  background-image: -webkit-gradient(linear,center bottom,center top,from(#fff),color-stop(0.5, #eaeaea),to(#fff));
+  margin-top:20px;
+  margin-bottom:20px;
+	}
+	.features-table td{
+  height: 70px;
+  padding: 0 20px;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+</script>
+</head>
+<body>
+    <form>
+        <table class="features-table">
+        <tr>
+        <td>
+        <input id="firstNumber" type="text" size="2"></input> * <a><big>x</big><sup><small>2</small></sup></a> &plusmn; <input id="secondNumber" type="text" size="2"></input> * <a><big>x</big></a> &plusmn; <input id="thirdNumber" type="text" size="2" value=""></input> = <a>0</a></br><a><small>(Enter coefficients)</small></a></br></br>
+        <input id="count" type="button" value="Counting Square Discriminant" onclick="equation()"></input></br></br>
+        </td>
+        </tr>
+        <tr>
+        <td></br>
+        <a>Discriminant is </a><input id="answer" type="text" size="5" readonly="readonly"></input></br></br>
+        </td>
+        </tr>
+        <tr>
+        <td></br>
+        <a>Log </a></br><input id="secondAnswer" type="text" size="60" readonly="readonly"></input></input></br></br>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <a>Roots</a></br><input id="thirdAnswer" type="text" readonly="readonly" style="width:100%"></input></br>
+        <input type="button" value="Clear" onclick="cancel()"></input>
+        </td>
+        </tr>
+        </table>
+        </form>
+        <h3>EQUATION IS: x^3-5x+1</h3>
+	
+	
+</body></html>
